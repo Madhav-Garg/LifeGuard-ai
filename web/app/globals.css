@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 20% 20%, rgba(0, 245, 255, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.12), transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08), transparent 40%);
+}
+
+.bg-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glass {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 245, 255, 0.4);
+  box-shadow: 0 0 24px rgba(0, 245, 255, 0.25);
+}
+
+.gradient-accent {
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.9), rgba(59, 130, 246, 0.9), rgba(0, 245, 255, 0.9));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
